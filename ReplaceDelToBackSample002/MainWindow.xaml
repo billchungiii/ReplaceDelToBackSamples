@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:ReplaceDelToBackSample002"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <!-- by override OnPreviewKeyDown in Window class -->
     <Grid>
         <local:UserControl1 />
     </Grid>

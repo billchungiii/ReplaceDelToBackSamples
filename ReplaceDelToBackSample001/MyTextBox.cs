@@ -17,7 +17,10 @@ namespace ReplaceDelToBackSample001
                 var backKey = new KeyEventArgs(Keyboard.PrimaryDevice, Keyboard.PrimaryDevice.ActiveSource, 0, Key.Back);
                 backKey.RoutedEvent = Keyboard.KeyDownEvent;
                 InputManager.Current.ProcessInput(backKey);
+                return;
             }
+
+            base.OnPreviewKeyDown(e);
         }
     }
 }
